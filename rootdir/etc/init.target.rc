@@ -20,7 +20,7 @@ service ril-daemon2-09w /system/bin/rild -l /system/lib/libsec-ril-dsds-09w.so -
     group radio cache inet misc audio log qcom_diag
 
 service qcom-ril-sh /system/bin/sh /init.qcom.ril.sh
-    class late_start
+    class main
     user root
     group root
     oneshot
